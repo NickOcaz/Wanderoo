@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lato:wght@300&display=swap');
+
+:root {
+    --orange: #ffa673;
+    --green: #4a7a7b;
+    --white: #fbfeff;
+    --timber: #e7e1db60;
+    --black: #0d0f11;
+
+
+
+    /* ex.. call with -background-color var(--orange) */
+}
+
+h1,
+h2,
+h5 {
+    font-family: "Caveat Brush", serif;
+    font-weight: 500;
+}
+
+.navbar-toggler {
+    background-color: var(--white);
+    border-radius: 75px 15px 75px 75px;
+    background-color: var(--orange);
+    box-shadow: 1px 1px 20px var(--black);
+    width: 80px;
+    height: 40px;
+}
+
+.navbar-toggler:hover {
+    background-color: var(--white);
+    border-radius: 75px 15px 75px 75px;
+    background-color: var(--orange);
+    width: 80px;
+    height: 40px;
+    background-color: var(--white);
+    box-shadow: 1px 1px 20px var(--white);
+}
+
+
+
+#destinations h2 {
+    font-family: "Caveat Brush", serif;
+    text-align: center;
+}
+
+#cardContainer h2 {
+    margin: 40px;
+}
+
+#hero h1 {
+    color: antiquewhite;
+    font-size: 50px;
+    text-shadow: 5px 5px 15px var(--black);
+}
+
+#hero p,
+#hero label {
+    color: wheat;
+    text-shadow: 5px 5px 15px var(--black);
+    font-size: 1.5rem;
+
+}
+
+#hero label {
+    font-weight: bold;
+}
+
+/* Navigation bar styles */
+
+#nav-color {
+    background: linear-gradient(180deg, var(--black), var(--green));
+    padding-bottom: 0;
+
+}
+
+#navigation_bar a {
+    color: var(--orange);
+    text-shadow: 5px 5px 10px var(--black);
+}
+
+#navigation_bar .active {
+    color: var(--white);
+    font-weight: 500;
+}
+
+#navigation_bar .nav-link:hover {
+    text-decoration: underline;
+}
+
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px 2px var(--black);
+    margin-left: 2rem;
+    margin-right: 1rem;
+
+}
+
+
+/* Need different thumbs for different browsers thus 3 styles are needed for cross broswer compatability */
+
+/* WebKit Slider Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default appearance */
+    width: 20px;
+    height: 20px;
+    background: var(--green);
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+/* Firefox Slider Thumb */
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--green);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* IE Slider Thumb */
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--green);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#website_icon {
+    font-family: "Caveat Brush", serif;
+    font-size: 30px
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+#hero {
+    background-image: url('../images/hero-1280x850.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 80px;
+    width: 100%;
+    margin: 0px;
+}
+
+.form-range img {
+    width: 50%;
+    height: 50%;
+}
+
+/* About us page */
+.about-us-img {
+    width: 50%;
+    height: 50%;
+    ;
+}
+
+
+.social-links {
+    font-size: 30px;
+
+}
+
+/* crops budget calculator image when screen width changes */
+.img-crop {
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+
+}
+
+/* style for destination cards */
+.card {
+    background-color: var(--timber);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* center the cards when there are fewer cards in a row */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* when mouse over cars change color */
+.card:hover {
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.719);
+}
+
+.btn-primary {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--orange);
+    color: var(--green);
+}
+
+/* container for the for and the map */
+#map {
+    height: 300px;
+    width: 100%;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+
+
+button {
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+
+#cardContainer button {
+    margin-top: 0.5rem
+}
+
+button:hover {
+    background-color: var(--orange);
+    color: var(--green);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+}
+
+/* Destination pop up styles */
+.destinationModal {
+    display: none;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.destinationModal img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+/* Footer styles */
+
+#footer-style {
+    background: linear-gradient(180deg, var(--black), var(--green));
+    padding: 20px;
+    color: var(--white);
+    text-align: center;
+    text-shadow: 5px 5px 10px var(--black);
+}
+
+#footer-style img {
+    box-shadow: 1px 1px 10px var(--black);
+    width: 150px;
+}
+
+#footer-style h5 {}
+
+.crew {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1px;
+}
+
+footer a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+/* crops budget calculator image height on mobile */
+@media (max-width: 767px) {
+    .img-crop {
+        height: 200px;
+    }
+
+    #cardContainer h2 {
+        margin: 10px 5px;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-range {
+        width: 70%;
+    }
+
+    #hero {
+        padding: 150px 80px;
+    }
+}
